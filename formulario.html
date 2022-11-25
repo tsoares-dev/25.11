@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalhando Com Formulários</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- FORM, LABEL, INPUT,TEXTAREA,BUTTON... -->
+  <!-- POST (ENVIAR DADOS)  -->
+  <!-- METHOD="GET" (CAPTURA E DEPOIS ENVIA) -->
+  <form action="/formulario.html">
+
+    <div>
+      <label for="nome">NOME:</label>
+      <input type="text" id="nome" />
+    </div>
+
+    <div>
+      <label for="email">E-MAIL:</label>
+      <input type="email" id="email" />
+    </div>
+
+    <div>
+      <label for="assunto">ASSUNTO:</label>
+      <input type="text" id="assuntol" />
+    </div>
+
+    <div>
+      <label for="msg">MENSAGEM:</label>
+      <textarea id="msg">Digite seu texto</textarea>
+    </div>
+
+    <!-- <div class="botao_enviar">
+      <button type="submit">Enviar Mensagem</button>
+      <button type="reset">Limpar Formulário</button>
+    </div> -->
+
+    <div class="botao">
+      <button type="submit" id="enviar">Enviar</button>
+      <button type="submit" id="limpar">Limpar</button>
+      <!-- <button type="get">Enviar Mensagem</button>
+      <button type="reset">Limpar Formulário</button> -->
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Escolha uma Ooção</legend>
+        <p>
+          <!-- <input type="checkbox" name="opcao1" value="masculino"> -->
+          <!-- checkbox(mais de uma opção) -->
+          <!-- radio (apenas uma opção) -->
+          <input type="radio" name="opcao1" value="masculino">
+          <label for="opcao1">Masculino</label>
+        </p>
+
+        <p>
+          <input type="radio" name="opcao1" value="feminino">
+          <label for="opcao2">Feminino</label>
+        </p>
+      </fieldset>
+    </div>
+
+  </form>
+  
+</body>
+</html>
